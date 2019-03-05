@@ -11,14 +11,20 @@
         esIndice: false,
         ckEditorStyles: {
             name: 'abprasti',
-            styles: [{
-                name: 'Ã‰nfasis',
-                element: 'span',
-                attributes: {
-                    'class': 'bck-enfasis'
-                }
-            }]
+            styles: [
+
+            { name: 'Título 1', element: 'h2', attributes: { 'class': 'bck-title1'} },
+            { name: 'Título 2', element: 'h3', attributes: { 'class': 'bck-title2'} },
+            { name: 'Título 3', element: 'h3', attributes: { 'class': 'bck-title3'} },
+            { name: 'Título 4', element: 'h3', attributes: { 'class': 'bck-title4'} },
+              
+
+            { name: 'Ã‰nfasis',element: 'span',attributes: {'class': 'bck-enfasis'} }
+
+            ]
         },
+
+
         init: function(scope) {
             var that = scope || this;
             this.parent.init.call(that);
